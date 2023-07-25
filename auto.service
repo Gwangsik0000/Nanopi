@@ -1,0 +1,16 @@
+[Unit]
+
+Description=Systemd Test Daemon
+
+
+
+[Service]
+Type=oneshot
+ExecStart=sh /home/pi/auto.sh
+#ExecStart=sh /home/pi/auto1.sh
+Restart=on-failure
+StandardOutput=tty
+TTYPath=/dev/ttyS0
+
+[Install]
+WantedBy=multi-user.target
