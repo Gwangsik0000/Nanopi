@@ -55,7 +55,7 @@ sudo cp /home/myir/Nanopi/.profile /home/myir/.profile
 sudo cp /home/myir/Nanopi/rc.local /etc/rc.local
 sudo chmod 777 /etc/rc.local
 sudo systemctl start rc-local.service
-sudo cp /home/myir/Nanopi/rc-local.service /usr/lib/systemd/system/rc-local.service
+sudo cp /home/myir/Nanopi/rc-local.service /lib/systemd/system/rc-local.service
 sudo systemctl enable rc-local.service
 
 echo Complete

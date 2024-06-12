@@ -25,7 +25,7 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-python time.py
+#python time.py
 sleep 3
 systemctl start auto &
 #systemctl start auto1 
