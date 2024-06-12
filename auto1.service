@@ -6,8 +6,8 @@ Description=Systemd Test Daemon
 
 [Service]
 Type=oneshot
-#ExecStart=sh /home/pi/auto.sh
-ExecStart=sh /home/pi/auto1.sh
+#ExecStart=sh /home/myir/auto.sh
+ExecStart=sh /home/myir/auto1.sh
 Restart=on-failure
 StandardOutput=tty
 TTYPath=/dev/ttyS0

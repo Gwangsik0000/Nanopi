@@ -32,9 +32,9 @@ fi
 #	pid=`ps -ef | grep "sudo python3 /home/pi/slcmain.py" | grep -v 'grep' | awk '{print$2}'`
 #	if  [ -z "$pid" ]
 #	then
-#		sudo python3 /home/pi/slcmain.py
-#		sudo python3 /home/pi/lcmain.py
-#		sudo python3 /home/pi/tcp_server.py
+#		sudo python3 /home/myir/slcmain.py
+#		sudo python3 /home/myir/lcmain.py
+#		sudo python3 /home/myir/tcp_server.py
 #	fi
 #done
 #sudo hwclock -s

@@ -11,20 +11,20 @@
 #
 # By default this script does nothing.
 
-/usr/local/bin/gen-friendlyelec-release
-. /etc/friendlyelec-release
-if [ ! -f /etc/firstuse ]; then
-    /bin/echo ${BOARD} > /etc/hostname
-    /bin/sed -i "s/\(127.0.1.1\s*\).*/\1${BOARD}/g" /etc/hosts
-    /bin/hostname ${BOARD}
-    /bin/echo "0" > /etc/firstuse
-fi
+#/usr/local/bin/gen-friendlyelec-release
+#. /etc/friendlyelec-release
+#if [ ! -f /etc/firstuse ]; then
+#    /bin/echo ${BOARD} > /etc/hostname
+#    /bin/sed -i "s/\(127.0.1.1\s*\).*/\1${BOARD}/g" /etc/hosts
+#    /bin/hostname ${BOARD}
+#    /bin/echo "0" > /etc/firstuse
+#fi
 
-if [ -e /usr/bin/setqtenv ]; then
-. /usr/bin/setqtenv
-/usr/bin/lcd2usb_print "CPU: {{CPU}}" "Mem: {{MEM}}" "IP: {{IP}}" "LoadAvg: {{LOADAVG}}" 2>&1 > /dev/null&
+#if [ -e /usr/bin/setqtenv ]; then
+#. /usr/bin/setqtenv
+#/usr/bin/lcd2usb_print "CPU: {{CPU}}" "Mem: {{MEM}}" "IP: {{IP}}" "LoadAvg: {{LOADAVG}}" 2>&1 > /dev/null&
 #/opt/QtE-Demo/run.sh&
-fi
+#fi
 #mount /dev/mmcblk1p1 /mnt/SD
 #sudo hwclock -f /dev/rtc1 -s
 #sudo hwclock -w
