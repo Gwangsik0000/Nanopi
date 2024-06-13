@@ -19,10 +19,10 @@ sudo apt-get install python3
 sudo apt-get install python3-pip
 pip3 install pyserial
 pip3 install sysv-ipc
-git clone https://github.com/friendlyarm/RPi.GPIO_NP
-cd RPi.GPIO_NP
-sudo python3 setup.py install
-sudo python3 setup.py install
+#git clone https://github.com/friendlyarm/RPi.GPIO_NP
+#cd RPi.GPIO_NP
+#sudo python3 setup.py install
+#sudo python3 setup.py install
 
 #[samba]
 sudo apt-get install samba
