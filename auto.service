@@ -1,16 +1,15 @@
 [Unit]
-
-Description=Systemd Test Daemon
-
-
+Description= Python auto Start
+After=rc-local.service
 
 [Service]
-Type=oneshot
-ExecStart=sh /home/myir/auto.sh
-#ExecStart=sh /home/myir/auto1.sh
-Restart=on-failure
-StandardOutput=tty
-TTYPath=/dev/ttyS0
+Type=idle
+WorkingDirectory=/home/myir
+#ExecStart=/home/myir/auto.sh
+ExecStart=/usr/bin/python3 -u  /home/myir/slcmain.py
+Restart=always
+User=myir
+Group=root
 
 [Install]
 WantedBy=multi-user.target
