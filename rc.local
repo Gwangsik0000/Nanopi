@@ -29,4 +29,5 @@
 #sudo hwclock -f /dev/rtc1 -s
 #sudo hwclock -w
 sudo chmod 777 /dev/ttySTM*
+sudo chmod 777 /dev/gpiochip*
 exit 0
