@@ -45,11 +45,11 @@ sudo cp /home/myir/Nanopi/profile /etc/profile
 #[auto start]
 sudo cp /home/myir/Nanopi/auto.sh /home/myir/
 sudo cp /home/myir/Nanopi/auto.service /etc/systemd/system/
-sudo cp /home/myir/Nanopi/auto1.sh /home/myir/
-sudo cp /home/myir/Nanopi/auto1.service /etc/systemd/system/
-sudo cp /home/myir/Nanopi/.profile /home/myir/.profile
-#systemctl start auto.service
-#systemctl enable auto.service
+#sudo cp /home/myir/Nanopi/auto1.sh /home/myir/
+#sudo cp /home/myir/Nanopi/auto1.service /etc/systemd/system/
+#sudo cp /home/myir/Nanopi/.profile /home/myir/.profile
+systemctl start auto.service
+systemctl enable auto.service
 
 #[rc.local]
 sudo cp /home/myir/Nanopi/rc.local /etc/rc.local
