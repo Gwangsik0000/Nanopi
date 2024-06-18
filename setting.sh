@@ -14,15 +14,12 @@ sudo systemctl enable systemd-resolved.service
 
 #[package]
 sudo apt-get update
-#sudo apt-get install python-dev
-sudo apt-get install -y python3
-sudo apt-get install -y python3-pip
+sudo apt-get install -y python3.8 python3.8-dev python3-pip pkg-config
+sudo apt-get install -y gpiod libgpiod-dev
+python3 -m pip install -U --user pip gpiod
+#pip3 install gpiod
 pip3 install pyserial
 pip3 install sysv-ipc
-#git clone https://github.com/friendlyarm/RPi.GPIO_NP
-#cd RPi.GPIO_NP
-#sudo python3 setup.py install
-#sudo python3 setup.py install
 
 #[samba]
 sudo apt-get install samba
