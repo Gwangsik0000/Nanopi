@@ -16,6 +16,7 @@ sudo systemctl enable systemd-resolved.service
 sudo apt-get update
 sudo apt-get install -y python3.8 python3.8-dev python3-pip pkg-config
 sudo apt-get install -y gpiod libgpiod-dev
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
 python3 -m pip install -U --user pip gpiod
 #pip3 install gpiod
 pip3 install pyserial
@@ -45,8 +46,8 @@ sudo cp /home/myir/Nanopi/auto.service /etc/systemd/system/
 #sudo cp /home/myir/Nanopi/auto1.sh /home/myir/
 #sudo cp /home/myir/Nanopi/auto1.service /etc/systemd/system/
 #sudo cp /home/myir/Nanopi/.profile /home/myir/.profile
-systemctl start auto.service
-systemctl enable auto.service
+sudo systemctl start auto.service
+sudo systemctl enable auto.service
 
 #[rc.local]
 sudo cp /home/myir/Nanopi/rc.local /etc/rc.local
