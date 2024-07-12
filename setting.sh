@@ -40,7 +40,7 @@ ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 #sudo cp /home/pi/Nanopi/profile /etc/profile
 
 #[SD card mount]
-sudo mkdir /mnt/SD
+#sudo mkdir /mnt/SD
 
 #[auto start]
 cp /home/pi/Nanopi/auto.sh /home/pi/
