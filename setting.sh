@@ -45,8 +45,10 @@ sudo mkdir /mnt/SD
 #[auto start]
 cp /home/pi/Nanopi/auto.sh /home/pi/
 cp /home/pi/Nanopi/auto.service /etc/systemd/system/
-cp /home/pi/Nanopi/auto1.sh /home/pi/
-cp /home/pi/Nanopi/auto1.service /etc/systemd/system/
+cp /home/pi/Nanopi/run.sh /home/pi
+cp /home/pi/Nanopi/stop.sh /home/pi
+#cp /home/pi/Nanopi/auto1.sh /home/pi/
+#cp /home/pi/Nanopi/auto1.service /etc/systemd/system/
 cp /home/pi/Nanopi/.profile /home/pi/.profile
 #systemctl start auto.service
 #systemctl enable auto.service
