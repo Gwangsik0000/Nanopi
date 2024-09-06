@@ -1,8 +1,8 @@
 #!/bin/bash
 #[root account]
-sudo cp /home/pi/Nanopi/sudoers /etc/sudoers
-sudo cp /home/pi/Nanopi/passwd /etc/passwd
-sudo cp /home/pi/Nanopi/group /etc/group
+#sudo cp /home/pi/Nanopi/sudoers /etc/sudoers
+#sudo cp /home/pi/Nanopi/passwd /etc/passwd
+#sudo cp /home/pi/Nanopi/group /etc/group
 #sudo cp /home/pi/Nanopi/sshd_config /etc/ssh/sshd_config
 #sudo service ssh restart
 
@@ -22,7 +22,7 @@ pip install sysv-ipc
 git clone https://github.com/friendlyarm/RPi.GPIO_NP
 cd RPi.GPIO_NP
 python3 setup.py install
-sudo python3 setup.py install
+#sudo python3 setup.py install
 
 #[samba]
 #sudo apt-get install samba
@@ -45,6 +45,7 @@ sudo cp /home/pi/Nanopi/profile /etc/profile
 #[auto start]
 sudo cp /home/pi/Nanopi/auto.sh /home/pi/
 sudo cp /home/pi/Nanopi/auto.service /etc/systemd/system/
+sudo chmod +x /etc/systemd/system/auto.service
 sudo cp /home/pi/Nanopi/run.sh /home/pi
 sudo cp /home/pi/Nanopi/stop.sh /home/pi
 #cp /home/pi/Nanopi/auto1.sh /home/pi/
