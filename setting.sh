@@ -1,10 +1,10 @@
 #!/bin/bash
 #[root account]
-sudo cp /home/pi/Nanopi/sudoers /etc/sudoers
-sudo cp /home/pi/Nanopi/passwd /etc/passwd
-sudo cp /home/pi/Nanopi/group /etc/group
-sudo cp /home/pi/Nanopi/sshd_config /etc/ssh/sshd_config
-sudo service ssh restart
+#sudo cp /home/pi/Nanopi/sudoers /etc/sudoers
+#sudo cp /home/pi/Nanopi/passwd /etc/passwd
+#sudo cp /home/pi/Nanopi/group /etc/group
+#sudo cp /home/pi/Nanopi/sshd_config /etc/ssh/sshd_config
+#sudo service ssh restart
 
 #[static ip]
 sudo cp /home/pi/Nanopi/interfaces /etc/network/interfaces
@@ -25,10 +25,10 @@ python3 setup.py install
 sudo python3 setup.py install
 
 #[samba]
-sudo apt-get install samba
-sudo cp /home/pi/Nanopi/smb.conf /etc/samba/smb.conf
-sudo service smbd restart
-sudo smbpasswd -a pi 
+#sudo apt-get install samba
+#sudo cp /home/pi/Nanopi/smb.conf /etc/samba/smb.conf
+#sudo service smbd restart
+#sudo smbpasswd -a pi 
 #echo pi
 #echo pi
 
