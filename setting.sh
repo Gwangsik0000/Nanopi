@@ -1,8 +1,8 @@
 #!/bin/bash
 #[root account]
-#sudo cp /home/pi/Nanopi/sudoers /etc/sudoers
-#sudo cp /home/pi/Nanopi/passwd /etc/passwd
-#sudo cp /home/pi/Nanopi/group /etc/group
+sudo cp /home/pi/Nanopi/sudoers /etc/sudoers
+sudo cp /home/pi/Nanopi/passwd /etc/passwd
+sudo cp /home/pi/Nanopi/group /etc/group
 #sudo cp /home/pi/Nanopi/sshd_config /etc/ssh/sshd_config
 #sudo service ssh restart
 
@@ -37,7 +37,7 @@ sudo cp /home/pi/Nanopi/timezone /etc/timezone
 ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
 #[start program]
-#sudo cp /home/pi/Nanopi/profile /etc/profile
+sudo cp /home/pi/Nanopi/profile /etc/profile
 
 #[SD card mount]
 #sudo mkdir /mnt/SD

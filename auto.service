@@ -5,7 +5,7 @@ After=rc-local.service
 [Service]
 Type=idle
 WorkingDirectory=/home/pi
-ExecStart=/home/pi/auto.sh
+ExecStart=sh /home/pi/auto.sh
 Restart=always
 StandardOutput=tty
 TTYPath=/dev/ttyS0

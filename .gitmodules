@@ -1,0 +1,3 @@
+[submodule "RPI.GPIO_NP"]
+	path = RPI.GPIO_NP
+	url = https://github.com/Gwangsik0000/Nanopi
