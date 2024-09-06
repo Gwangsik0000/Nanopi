@@ -1,6 +1,6 @@
 #!/bin/bash
 #[root account]
-#sudo cp /home/pi/Nanopi/sudoers /etc/sudoers
+sudo cp /home/pi/Nanopi/sudoers /etc/sudoers
 #sudo cp /home/pi/Nanopi/passwd /etc/passwd
 #sudo cp /home/pi/Nanopi/group /etc/group
 #sudo cp /home/pi/Nanopi/sshd_config /etc/ssh/sshd_config
