@@ -1,14 +1,14 @@
 [Unit]
-Description=Systemd Test Daemon
+Description=Systemd Auto Start Daemon
 After=rc-local.service
 
 [Service]
 Type=simple
 WorkingDirectory=/home/pi
-ExecStart=/home/pi/auto.sh
+ExecStart=sh /home/pi/auto.sh
 Restart=always
 StandardOutput=journal
-standarError=journal
+StandardError=journal
 TTYPath=/dev/ttyS0
 
 [Install]
