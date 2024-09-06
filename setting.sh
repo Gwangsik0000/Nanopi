@@ -15,10 +15,10 @@ sudo systemctl enable systemd-resolved.service
 #[package]
 sudo apt-get update
 #sudo apt-get install python-dev
-sudo apt-get install -y python3
-sudo apt-get install -y python3-pip
-pip install -y pyserial
-pip install -y sysv-ipc
+sudo apt-get install python3
+sudo apt-get install python3-pip
+pip install pyserial
+pip install sysv-ipc
 git clone https://github.com/friendlyarm/RPi.GPIO_NP
 cd RPi.GPIO_NP
 python3 setup.py install
@@ -50,8 +50,8 @@ cp /home/pi/Nanopi/stop.sh /home/pi
 #cp /home/pi/Nanopi/auto1.sh /home/pi/
 #cp /home/pi/Nanopi/auto1.service /etc/systemd/system/
 cp /home/pi/Nanopi/.profile /home/pi/.profile
-#systemctl start auto.service
-#systemctl enable auto.service
+systemctl start auto.service
+systemctl enable auto.service
 
 #[rc.local]
 cp /home/pi/Nanopi/rc.local /etc/rc.local
