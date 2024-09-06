@@ -43,21 +43,21 @@ ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 #sudo mkdir /mnt/SD
 
 #[auto start]
-cp /home/pi/Nanopi/auto.sh /home/pi/
-cp /home/pi/Nanopi/auto.service /etc/systemd/system/
-cp /home/pi/Nanopi/run.sh /home/pi
-cp /home/pi/Nanopi/stop.sh /home/pi
+sudo cp /home/pi/Nanopi/auto.sh /home/pi/
+sudo cp /home/pi/Nanopi/auto.service /etc/systemd/system/
+sudo cp /home/pi/Nanopi/run.sh /home/pi
+sudo cp /home/pi/Nanopi/stop.sh /home/pi
 #cp /home/pi/Nanopi/auto1.sh /home/pi/
 #cp /home/pi/Nanopi/auto1.service /etc/systemd/system/
-cp /home/pi/Nanopi/.profile /home/pi/.profile
-systemctl start auto.service
-systemctl enable auto.service
+sudo cp /home/pi/Nanopi/.profile /home/pi/.profile
+sudo systemctl start auto.service
+sudo systemctl enable auto.service
 
 #[rc.local]
-cp /home/pi/Nanopi/rc.local /etc/rc.local
-chmod +x /etc/rc.local
-systemctl start rc-local.service
-cp /home/pi/Nanopi/rc-local.service /usr/lib/systemd/system/rc-local.service
-systemctl enable rc-local.service
+sudo cp /home/pi/Nanopi/rc.local /etc/rc.local
+sudo chmod +x /etc/rc.local
+sudo systemctl start rc-local.service
+sudo cp /home/pi/Nanopi/rc-local.service /usr/lib/systemd/system/rc-local.service
+sudo systemctl enable rc-local.service
 
 echo Complete
