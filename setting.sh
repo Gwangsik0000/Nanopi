@@ -14,11 +14,14 @@ sudo systemctl enable systemd-resolved.service
 
 #[package]
 sudo apt-get update
-#sudo apt-get install python-dev
+sudo apt-get install -y python-dev
 sudo apt-get install -y python3
 sudo apt-get install -y python3-pip
 pip install pyserial
+pip3 install pyserial
 pip install sysv-ipc
+pip3 install sysv-ipc
+sudo -H pip3 install pyserial sysv_ipc
 git clone https://github.com/friendlyarm/RPi.GPIO_NP
 cd RPi.GPIO_NP
 python3 setup.py install
