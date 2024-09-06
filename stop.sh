@@ -17,11 +17,11 @@ else
   kill -9 "$pid"
 fi
 
-pid=`ps -ef | grep "python3 /home/pi/serial_ttyS2.py" | grep -v 'grep' | awk '{print$2}'`
+pid=`ps -ef | grep "python3 /home/pi/ttyS2_server.py" | grep -v 'grep' | awk '{print$2}'`
 if [ -z "$pid" ]; then
 	echo "no pid"
 else
-	echo "kill serial_ttyS2.py"
+	echo "kill ttyS2_server.py"
 	kill -9 "$pid"
 fi
 
