@@ -24,8 +24,8 @@ pip3 install sysv-ipc
 sudo -H pip3 install pyserial sysv_ipc
 git clone https://github.com/friendlyarm/RPi.GPIO_NP
 cd RPi.GPIO_NP
-python3 setup.py install
-#sudo python3 setup.py install
+#python3 setup.py install
+sudo python3 setup.py install
 
 #[samba]
 #sudo apt-get install samba
@@ -63,5 +63,8 @@ sudo chmod +x /etc/rc.local
 sudo systemctl start rc-local.service
 sudo cp /home/pi/Nanopi/rc-local.service /usr/lib/systemd/system/rc-local.service
 sudo systemctl enable rc-local.service
+
+sudo cp /home/pi/Nanopi/passwd /etc/passwd
+sudo cp /home/pi/Nanopi/group /etc/group
 
 echo Complete
